@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
@@ -8,7 +9,7 @@ export default function Index() {
       <Text style={styles.text}>Enter text below</Text>
       <TextInput
         placeholder="Write here any alphabet to show pizza"
-        value={text} 
+        value={text}
         onChangeText={setText}
         style={{
           height: 40,
@@ -26,6 +27,10 @@ export default function Index() {
           .map((word) => word && "🍕") // Map each character to a pizza emoji
           .join("")}
       </Text>
+
+      <Link href="/about" style={styles.button}>
+        Go to about page
+      </Link>
     </View>
   );
 }
@@ -38,6 +43,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   text: {
+    color: "#fff",
+  },
+  button: {
+    fontSize: 20,
+    textDecorationLine: "underline",
     color: "#fff",
   },
 });

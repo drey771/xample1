@@ -28,7 +28,7 @@ export default function Index() {
           .join("")}
       </Text>
 
-      <Link href="/about" style={styles.button}>
+      <Link href="/tabs/about" style={styles.button}>
         Go to about page
       </Link>
     </View>

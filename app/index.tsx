@@ -8,8 +8,8 @@ export default function Index() {
       <Text style={styles.text}>Enter text below</Text>
       <TextInput
         placeholder="Write here any alphabet to show pizza"
-        value={text} // Bind TextInput value to state
-        onChangeText={setText} // Update state on text change
+        value={text} 
+        onChangeText={setText}
         style={{
           height: 40,
           padding: 5,
@@ -18,7 +18,7 @@ export default function Index() {
           color: "#000",
           backgroundColor: "#fff",
           marginTop: 20,
-        }} // TextInput styling
+        }}
       />
       <Text>
         {text
